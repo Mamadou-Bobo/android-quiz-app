@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="322dp"
+        android:layout_height="267dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/blue"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Welcome"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtEditTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtWelcome"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Please enter your name"
+                android:textColor="@color/grey" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="262dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txtEditTitle"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/startBtn"
+                android:layout_width="262dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/editName"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purpleHeart"
+                android:text="Start"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
